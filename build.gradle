@@ -1,0 +1,28 @@
+plugins {
+  id 'java'
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compileOnly 'org.projectlombok:lombok:1.18.30'
+  annotationProcessor 'org.projectlombok:lombok:1.18.30'
+  
+  testCompileOnly 'org.projectlombok:lombok:1.18.30'
+  testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+  
+  testImplementation('org.junit.jupiter:junit-jupiter:5.6.0')
+  testImplementation 'org.mockito:mockito-core:3.6.0'
+  testImplementation 'org.mockito:mockito-junit-jupiter:3.6.0'
+}
+
+test {
+  useJUnitPlatform()
+  testLogging {
+    showStandardStreams true
+    events 'started', 'skipped', 'passed', 'failed'
+    exceptionFormat 'full'
+  }
+}
