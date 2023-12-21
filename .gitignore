@@ -1,4 +1,6 @@
 build/
 .upm/
+.cache/
 target/
-.gradle/
+.gradle/*
+!.gradle/gradle.properties
