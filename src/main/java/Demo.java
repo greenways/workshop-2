@@ -1,4 +1,4 @@
-public class Demo {
+class Demo {
 
   public String run() {
     return "Hello.";

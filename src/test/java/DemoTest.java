@@ -16,7 +16,7 @@ import org.mockito.Mock;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-public class TestDemo {
+class DemoTest {
 
   @Test
   public void successTest() {
